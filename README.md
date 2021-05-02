@@ -1,6 +1,6 @@
 # BBQ Splash Page
 
-This is a practice HTML/CSS Project I made as a part of the Kevin Powell's [**Responsive Design Bootcamp**](https://scrimba.com/learn/responsive).
+This is a practice HTML/CSS project I made as a part of the Kevin Powell's [**Responsive Design Bootcamp**](https://scrimba.com/learn/responsive).
 
 - [Live Demo](https://bbqsplashpage.netlify.app/)
 
