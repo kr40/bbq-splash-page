@@ -1,6 +1,6 @@
 # BBQ Splash Page
 
-This is a practice HTML/CSS Project I made as a part of the Kevin Powell Responsive Design Bootcamp.
+This is a practice HTML/CSS Project I made as a part of the Kevin Powell's [**Responsive Design Bootcamp**](https://scrimba.com/learn/responsive).
 
 _It was made using the [Vanilla Playground Template](https://github.com/kr40/vanilla-playground/generate)._
 
