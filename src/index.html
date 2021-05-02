@@ -10,40 +10,37 @@
 
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css" />
 		<link rel="stylesheet" href="/styles/style.css" />
 
 		<title>Vanilla Playground</title>
 	</head>
 	<body>
-		<div class="container">
-			<button onclick="toggleTheme()">Switch Theme</button>
-			<h1>
-				<span><i class="fas fa-home"></i></span> Vanilla Playground
-			</h1>
+		<div class="intro">
+			<h1>Learn how to make <strong>the best BBQ ribs</strong> in town</h1>
+			<p>Join us for this live webinar</p>
+			<p class="top-text">Mouthwateringly delicious</p>
+		</div>
 
-			<p>This is a vanilla playground scaffolded with vite.js to mess around with HTML/CSS/JS.</p>
-			<p>Comes with eslint and stylelint pre-configured.</p>
-			<br />
+		<div class="main-content">
+			<h2>Become a BBQ master!</h2>
+			<p>Register Today</p>
 			<p>
-				<span><i class="fas fa-info-circle"></i>&nbsp;</span>Assumes prettier is already setup.
+				BBQ isn't just standing in front of your grill with it on full blast and hoping for the
+				best. It's an art! One way to speed up the process is to learn from the best. You can do
+				just that by signing up for this free webinar!
 			</p>
+
+			<form class="email-collector" action="#" method="POST">
+				<input type="text" required placeholder="first name" />
+				<input type="email" required placeholder="email" />
+				<button class="btn btn-primary" type="submit">Register</button>
+			</form>
+
+			<p class="fine-print">We'll never share your information without your permission</p>
 		</div>
 
 		<!-- Scripts -->
 		<script defer type="module" src="/main.js"></script>
 		<script defer src="/scripts/index.js"></script>
-		<script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
-		<script defer>
-			function toggleTheme() {
-				const theme = document.getElementsByTagName('link')[2];
-
-				if (theme.getAttribute('href') == 'https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css') {
-					theme.setAttribute('href', 'https://cdn.jsdelivr.net/npm/water.css@2/out/light.css');
-				} else {
-					theme.setAttribute('href', 'https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css');
-				}
-			}
-		</script>
 	</body>
 </html>

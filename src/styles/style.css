@@ -1,6 +1,6 @@
 /** Imports  */
 
-@import url('https://fonts.googleapis.com/css?family=Overpass');
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900,900italic);
 
 /** Set everything to border-box */
 
@@ -16,18 +16,180 @@ html {
 
 /** Your styles go here */
 
+/*  font-family: 'Source Sans Pro', sans-serif;  */
+
+body {
+	margin: 0;
+	color: hsl(0, 0%, 25%);
+	font-size: 1rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+}
+
+/* =================
+   Typography
+   ================= */
+
 h1 {
-	font-family: Overpass, monospace;
+	margin: 0;
+	color: hsl(0, 0%, 100%);
+	font-weight: 300;
+	font-size: 2.25rem;
 }
 
-p {
-	font-family: Overpass, monospace;
+h1 + p {
+	margin: 0;
+	color: hsl(29, 89%, 52%);
+	font-weight: 900;
+	font-size: 1.3125rem;
+	text-transform: uppercase;
 }
 
-.container {
+h2 {
+	margin: 0;
+	font-size: 1.3125rem;
+}
+
+h2 + p {
+	margin-top: 0;
+	color: hsl(29, 89%, 52%);
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.top-text {
+	order: -1;
+	margin: 0;
+	padding-top: 2px;
+	border-top: 5px solid hsl(29, 89%, 52%);
+	border-image: linear-gradient(to left, hsl(17, 100%, 62%), hsl(36, 100%, 56%)) 1;
+	color: hsl(29, 89%, 52%);
+	font-weight: 900;
+	font-size: 0.625rem;
+	text-transform: uppercase;
+}
+
+.fine-print {
+	font-size: 0.625rem;
+	letter-spacing: 1px;
+}
+
+strong {
+	font-weight: 900;
+}
+
+/* =================
+   Intro section
+   ================= */
+
+.intro {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
+	justify-content: space-between;
+	min-height: 50vh;
+	padding: 0 0.5em 2em;
+	background-color: hsl(0, 0%, 25%);
+	background-image: url(../assets/ribs.jpg);
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: multiply;
+}
+
+/* =================
+   main-content section
+   ================= */
+
+.main-content {
+	padding: 2em 1em;
+}
+
+.intro > *,
+.main-content > * {
+	max-width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* =================
+   form
+   ================= */
+
+.email-collector {
+	width: 80%;
+	max-width: 300px;
+}
+
+input,
+.btn {
+	width: 100%;
+	border-radius: 5px;
+}
+
+input {
+	margin-bottom: 0.75em;
+	padding: 0.25em;
+	border: 1px solid hsl(0, 0%, 25%);
+	font-family: inherit;
+	text-align: inherit;
+	transform: scale(1);
+	transition: transform 250ms;
+}
+
+input:focus {
+	transform: scale(1.1);
+}
+
+.btn {
+	display: inline-block;
+	padding: 1em 1.5em;
+	border: 0;
+	font-weight: 900;
+	font-size: 0.625rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.btn-primary {
+	color: white;
+	background-image: linear-gradient(to left, hsl(17, 100%, 62%), hsl(36, 100%, 56%));
+	transform: scale(1);
+	transition: transform 250ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	transform: scale(1.1);
+}
+
+/* =================
+   media queries
+   ================= */
+
+@media (min-width: 500px) {
+	body {
+		display: flex;
+		font-size: 1.125rem;
+	}
+
+	h1 {
+		font-size: 3.5rem;
+	}
+
+	h2,
+	h1 + p {
+		font-size: 1.75rem;
+	}
+
+	.intro,
+	.main-content {
+		width: 50%;
+		min-height: 100vh;
+	}
+
+	.main-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 }
