@@ -2,18 +2,6 @@
 
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900,900italic);
 
-/** Set everything to border-box */
-
-html {
-	box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
-}
-
 /** Your styles go here */
 
 /*  font-family: 'Source Sans Pro', sans-serif;  */
