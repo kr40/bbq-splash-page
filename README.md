@@ -17,7 +17,7 @@ pre-configured.
 
 **Assumes `prettier` is already configured.**
 
-Also comes with `water.css`, `font-awesome 5` & `normalize.css`.
+Also comes with `water.css`, `font-awesome 5` & `sanitize.css`.
 
 `water.css` is a no-class `css` framework which just makes things look good out of the box. It comes with a automatic dark/light theme switching based on `prefer-color-scheme` media query, just use -
 
